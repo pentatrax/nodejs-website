@@ -5,7 +5,7 @@ html {
 }
 
 #nav {
-    display: inline-block;
+    display: flex;
     position: absolute;
     top: 0%;
     left: 0%;
@@ -14,13 +14,10 @@ html {
     background-color: blueviolet;
 }
 
-#nav .navbar{
+#nav div{
     position: relative;
     display: flex;
-    height: 100%;
-    width: 50%;
-}
-
-#nav .navbar a {
-    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
 }
