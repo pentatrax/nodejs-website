@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PentaTrax | <%= title %></title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <nav id="nav">
-        <div class="navbar">
-            <a href="/" class="index"></a>
-            <a href="/about" class="about"></a>
-            <a href="/community" class="community"></a>
-            <a href="/contact" class="contact"></a>
-        </div>
+        <div onclick="goTo('/')" class="index">Home</div>
+        <div onclick="goTo('/about')" class="about">About</div>
+        <div onclick="goTo('/community')" class="community">Community</div>
+        <div onclick="goTo('contact')" class="contact">Contact</div>
     </nav>
     <%- body %>
 </body>
