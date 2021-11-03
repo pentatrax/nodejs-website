@@ -1,3 +1,7 @@
+if (process.env.NODE_ENV !== 'production'){
+    require('dotenv').config();
+}
+
 const { urlencoded } = require('body-parser');
 const express = require('express');
 const expressLaytouts = require('express-ejs-layouts');
